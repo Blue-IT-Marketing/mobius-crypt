@@ -1,29 +1,9 @@
-# XMRig
-[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig/all.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/network)
+# mobius-crypt
 
-XMRig is a high performance Monero (XMR) CPU miner, with official support for Windows.
-Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
 
-* This is the **CPU-mining** version, there is also a [NVIDIA GPU version](https://github.com/xmrig/xmrig-nvidia) and [AMD GPU version]( https://github.com/xmrig/xmrig-amd).
-* [Roadmap](https://github.com/xmrig/xmrig/issues/106) for next releases.
+mobius crypt is a high performance Monero (XMR) CPU miner, with official support for Windows.
+mobius-crypt is based on mobius-crypt and support nearly all mobius-crypt features except the lack of fees
 
-<img src="http://i.imgur.com/OKZRVDh.png" width="619" >
-
-#### Table of contents
-* [Features](#features)
-* [Download](#download)
-* [Usage](#usage)
-* [Algorithm variations](#algorithm-variations)
-* [Build](https://github.com/xmrig/xmrig/wiki/Build)
-* [Common Issues](#common-issues)
-* [Other information](#other-information)
-* [Donations](#donations)
-* [Contacts](#contacts)
 
 ## Features
 * High performance.
@@ -34,17 +14,10 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * keepalived support.
 * Command line options compatible with cpuminer.
 * CryptoNight-Lite support for AEON.
-* Smart automatic [CPU configuration](https://github.com/xmrig/xmrig/wiki/Threads).
+* Smart automatic [CPU configuration](https://github.com/mobius-crypt/mobius-crypt/wiki/Threads).
 * Nicehash support
 * It's open source software.
 
-## Download
-* Binary releases: https://github.com/xmrig/xmrig/releases
-* Git tree: https://github.com/xmrig/xmrig.git
-  * Clone with `git clone https://github.com/xmrig/xmrig.git` :hammer: [Build instructions](https://github.com/xmrig/xmrig/wiki/Build).
-
-## Usage
-Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or share configurations.
 
 ### Options
 ```
@@ -69,7 +42,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
   -l, --log-file=FILE      log all output to a file
       --max-cpu-usage=N    maximum CPU usage for automatic threads mode (default 75)
       --safe               safe adjust threads and av settings for current CPU
-      --nicehash           enable nicehash/xmrig-proxy support
+      --nicehash           enable nicehash/mobius-crypt-proxy support
       --print-time=N       print hashrate report every N seconds
       --api-port=N         port for the miner API
       --api-access-token=T access token for API
@@ -87,15 +60,11 @@ Since version 0.8.0.
 * `--av=3` Software AES implementation.
 * `--av=4` Lower power mode (double hash) of `3`.
 
-## Common Issues
-### HUGE PAGES unavailable
-* Run XMRig as Administrator.
-* Since version 0.8.0 XMRig automatically enables SeLockMemoryPrivilege for current user, but reboot or sign out still required. [Manual instruction](https://msdn.microsoft.com/en-gb/library/ms190730.aspx).
 
 ## Other information
 * No HTTP support, only stratum protocol support.
 * No TLS support.
-* Default donation 5% (5 minutes in 100 minutes) can be reduced to 1% via command line option `--donate-level`.
+* the mining software is completely free to use.
 
 
 ### CPU mining performance
@@ -112,9 +81,10 @@ Please note performance is highly dependent on system load. The numbers above ar
 * Enable fast memory (Large/Huge pages).
 
 ## Donations
-* XMR: `48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD`
-* BTC: `1P7ujsXeX7GxQwHNnJsRMgAdNkFZmNVqJT`
+* BCN: `286Wu7z5NE2hJJ92VHhbJ73NWbGF4hWmyaAjbB7P8gKJG9i7owbaLDtKA32X5SrJuDPBgXTsSmQRoAbCzcDvM2d2PcUQicj`
+* XMR: `44B64GM7X4ubbg1LrJwTbZMvELjapRHJ1BRM92LPXNEGJ1mVcKVGafXWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm41C3eHr`
+* BTC: lols
 
 ## Contacts
-* support@xmrig.com
-* [reddit](https://www.reddit.com/user/XMRig/)
+* mobius-crypt@bleitmarketing.co.za
+
